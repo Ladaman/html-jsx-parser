@@ -1,0 +1,42 @@
+@import "../../../assets/styles/common.scss";
+
+.button {
+  width: fit-content;
+  padding: 12px 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  box-sizing: initial;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    padding: pl(12) pl(20);
+    border-radius: pl(4);
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+  &:focus {
+    outline: 1px solid #ffffff;
+  }
+  &.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  p {
+    font-family: AdjaraBold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.47;
+
+    @include mobile {
+      font-size: pl(15);
+    }
+  }
+}

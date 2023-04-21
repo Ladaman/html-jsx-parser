@@ -1,0 +1,20 @@
+{
+  "name": "read-file-test",
+  "version": "1.0.0",
+  "description": "parser for jsx files",
+  "main": "read-gpt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/parser": "^7.21.4",
+    "@babel/traverse": "^7.21.4",
+    "node-html-parser": "^6.1.5"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

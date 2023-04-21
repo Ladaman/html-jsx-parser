@@ -1,0 +1,51 @@
+@import "../../../assets/styles/common.scss";
+
+.lib-details {
+  width: 100%;
+  padding: 8px 10%;
+  margin-top: 8px;
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include mobile {
+    padding: pl(8) 10%;
+    margin-top: pl(8);
+    border-radius: pl(4);
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__number {
+    font-family: AdjaraSemiBold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.5;
+
+    color: #191919;
+
+    @include mobile {
+      font-size: pl(22);
+    }
+  }
+  &__text {
+    font-family: AdjaraRegular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.45;
+    color: #191919;
+    text-align: center;
+
+    @include mobile {
+      font-size: pl(12);
+    }
+  }
+}

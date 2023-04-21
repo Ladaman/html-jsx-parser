@@ -1,0 +1,93 @@
+@import "../../../assets/styles/common.scss";
+
+.calendar {
+  width: 100%;
+  height: 80px;
+  background: #535353;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__arrow {
+    width: 9px;
+    height: 18px;
+    cursor: pointer;
+
+    &-left {
+      transform: rotate(180deg);
+    }
+    &.inactive {
+      opacity: 0.5;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__container {
+    width: 90%;
+    height: 100%;
+    padding-top: 4px;
+  }
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+
+    // border-right: rgba($color: #ffffff, $alpha: 0.2) solid 1px;
+    // border-left: rgba($color: #ffffff, $alpha: 0.2) solid 1px;
+
+    &-day {
+      font-family: AdjaraSemiBold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+    }
+    &-month {
+      font-family: AdjaraSemiBold;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+    }
+    &-lock {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+    &.blocked {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+    &#active-calendar-day {
+      background-color: #ffffff;
+      color: #000000 !important;
+      border-radius: 12px 12px 0px 0px;
+      &::after {
+        content: "";
+        margin: 0 auto;
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+
+        border-bottom: 10px solid #191919;
+      }
+    }
+  }
+  .swiper {
+    margin: 0;
+  }
+}

@@ -1,0 +1,128 @@
+@import "../../../assets/styles/common.scss";
+
+.collection {
+  min-width: 50%;
+  padding: 18px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid #b6b6b6;
+  border-radius: 8px;
+  background: #202830;
+
+  @include mobile {
+    width: 98%;
+    margin-top: pl(50);
+    padding: pl(20) pl(18);
+    border: pl(1) solid #b6b6b6;
+    border-radius: pl(8);
+  }
+
+  &__box {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-family: AdjaraSemiBold;
+      font-size: 15px;
+      line-height: 1.47;
+      color: #ffffff;
+
+      @include mobile {
+        font-size: pl(18);
+      }
+    }
+    p {
+      margin-top: 14px;
+
+      font-family: AdjaraRegular;
+      font-size: 13px;
+      line-height: 1.54;
+      color: #ffffff;
+
+      @include mobile {
+        margin-top: pl(14);
+        font-size: pl(15);
+      }
+    }
+  }
+  &__img {
+    width: 144px;
+    height: 64px;
+    background: rgba(92, 100, 116, 0.38);
+    border-radius: 8px;
+
+    @include mobile {
+      width: pl(92);
+      height: pl(64);
+      border-radius: pl(8);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+      object-fit: contain;
+      object-position: center;
+
+      @include mobile {
+        border-radius: pl(8);
+      }
+    }
+  }
+  &__line {
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    margin: 12px 0;
+    background: #373f4a;
+
+    @include mobile {
+      height: pl(2);
+      border-radius: pl(4);
+      margin: pl(14) 0;
+    }
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    opacity: 0.5;
+    background: #5c6474;
+
+    @include mobile {
+      width: pl(50);
+      height: pl(50);
+      margin-right: pl(14);
+      margin-bottom: pl(10);
+    }
+
+    &:nth-child(5),
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

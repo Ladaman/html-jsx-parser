@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18.828" height="18.828" viewBox="0 0 18.828 18.828">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="prefix__x" transform="translate(1.414 1.414)">
+        <path id="prefix__Line_200" d="M16 0L0 16" class="prefix__cls-1" data-name="Line 200"/>
+        <path id="prefix__Line_201" d="M0 0L16 16" class="prefix__cls-1" data-name="Line 201"/>
+    </g>
+</svg>
